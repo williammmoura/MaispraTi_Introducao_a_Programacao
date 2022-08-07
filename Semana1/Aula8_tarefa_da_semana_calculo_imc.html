@@ -1,0 +1,28 @@
+<script>
+    
+    let peso = 63.5; //Peso em Kg.
+    let altura = 1.77; //Altura em metros
+
+    let imc = peso /(altura ** 2); 
+    //Cálculo do IMC => peso dividido pela altura ao quadrado.
+
+    //TAREFA: exibir uma mensage da classificação correspondente ao IMC.
+
+    if(imc < 18.5){
+        alert('Magreza.');
+        console.log('Magreza.');}
+    else if(imc < 24.9){
+        alert('Normal.');
+        console.log('Normal.');}
+    else if(imc < 29.9){
+        alert('Sobrepeso.');
+        console.log('Sobrepeso.');}
+    else if(imc < 39.9){
+        alert('Obesidade.');
+        console.log('Obesidade');}
+    else{
+        alert('Obesidade grave.');
+        console.log('Obesidade grave.');
+        }
+
+</script>
