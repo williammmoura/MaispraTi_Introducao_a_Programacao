@@ -1,0 +1,24 @@
+<script>
+    let entrada = prompt('Entre com um texto:');
+    console.log(entrada);
+    typeof(entrada);
+    
+    //Entrando com um número:
+    let numero = prompt('Entre com um número:');
+    console.log(numero);
+    typeof(numero);//Tipo "string".
+    
+    //Forçando o tipo como um número: (GAMBIARA)
+    let n2 = prompt('Entre com um número:') - 0;
+    console.log(n2);
+    typeof(n2)
+
+    /*Usando de forma mais "correta" para converter um número para uma string:*/
+    let n3 = prompt('Entre com um número:');
+    n3 = parseInt(n3);
+    console.log(n3);
+    typeof(n3);
+
+    /*Usando o parseFloat:*/
+    n3 = parseFloat(n3)
+</script>
