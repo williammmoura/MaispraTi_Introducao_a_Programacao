@@ -1,0 +1,28 @@
+<script>
+    
+    /*Calculadora Infinita*/
+
+    let enter = 0;
+    let contador = 0;
+    let operador = '';
+
+    while(operador != 's'){
+        
+        enter = parseFloat(prompt('Digite um número:'));
+        operador = prompt('Qual operação matemática você quer fazer? (+, -, *, /, %, **).Ou aperte s para sair.')
+
+        if(operador == '+'){
+            contador += enter;
+        }else if(operador == '-'){
+            contador -= enter;
+        }else if(operador == '*'){
+            contador *= enter;
+        }else if(operador == '/'){
+            contador /= enter;
+        }else if(operador == '%'){
+            contador %= enter;
+        }else (operador == '**')
+            contador **= enter;
+        alert('O resultado é: ' + contador)
+    }    
+</script>
