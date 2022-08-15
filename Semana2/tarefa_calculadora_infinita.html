@@ -10,40 +10,44 @@
             let contador = 0;
             let operador = '';
             let enter = parseFloat(prompt('Digite um número:'));
+            let resposta = 'n';
 
-            do{
-            operador = prompt('Qual operação matemática você quer fazer? (+, -, *, /, %, **)')
-            }while(operador != '+' && operador != '-' && operador != '*' && operador != '/' && operador != '**' && operador != '%'){
-                
-                let resultado = 0;
+            while(resposta == 'n'){
+                do{
+                operador = prompt('Qual operação matemática você quer fazer? (+, -, *, /, %, **)')
+                }while(operador != '+' && operador != '-' && operador != '*' && operador != '/' && operador != '**' && operador != '%'){
+                    
+                    let resultado = 0;
 
-                switch(operador){
-                    case '+':
-                        resultado += enter;
-                        alert('O resultado é: '+resultado);
-                    break
-                    case '-':
-                        resultado -= enter;
-                        alert('O resultado é: '+resultado);
-                    break
-                    case '*':
-                        resultado *= enter;
-                        alert('O resultado é: '+resultado);
-                    break
-                    case '/':
-                        resultado /= enter;
-                        alert('O resultado é: '+resultado);
-                    break
-                    case '**':
-                        resultado **= enter;
-                        alert('O resultado é: '+resultado);
-                    break
-                    case '%':
-                        resultado %= enter;
-                        alert('O resultado é: '+resultado);
-                    break
-                }
-            }    
+                    switch(operador){
+                        case '+':
+                            resultado += enter;
+                            alert('O resultado é: '+resultado);
+                        break
+                        case '-':
+                            resultado -= enter;
+                            alert('O resultado é: '+resultado);
+                        break
+                        case '*':
+                            resultado *= enter;
+                            alert('O resultado é: '+resultado);
+                        break
+                        case '/':
+                            resultado /= enter;
+                            alert('O resultado é: '+resultado);
+                        break
+                        case '**':
+                            resultado **= enter;
+                            alert('O resultado é: '+resultado);
+                        break
+                        case '%':
+                            resultado %= enter;
+                            alert('O resultado é: '+resultado);
+                        break
+                    }
+                }    
+            resposta = prompt('Você quer continuar calculando?(s/n)').toUpperCase
+            }
         </script>
     </body>    
 </html>
