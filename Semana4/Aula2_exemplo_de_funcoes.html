@@ -1,0 +1,19 @@
+<script>
+
+    //Funções
+    
+    function aleraInteiro(numero){
+        alert(parseInt(numero));//Converte para um número inteiro.
+    }
+
+    aleraInteiro('10'),
+    aleraInteiro('Olá, Mundo!');//Pela conversão, feito mais acima, a função retornará NaN.
+    aleraInteiro(10);
+
+    function aleraInteiro2(numero){
+        alert(isNaN(parseInt(numero))?"Entrada inválida. ":numero);/*TRADUZINDO: Se for NaN retornará "Entrada inválida.". Caso for número retornará o próprio número.*/
+    }
+    aleraInteiro2('Olá, Mundo!');
+    aleraInteiro2(10);
+</script>
+
