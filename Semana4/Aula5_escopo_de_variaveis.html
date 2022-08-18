@@ -1,0 +1,21 @@
+<script>
+    let x = 10;
+    function fazMuitaCoisa(z){//Escopo da vaiável "y".
+        let y = 20; /*Quando criado uma variável dentro de uma "function" ou dentro de um bloco de uma fução, a variável só irá existir ali dentro.*/
+        alert(z);
+        alert(y);
+    }
+    fazMuitaCoisa(30);
+
+/*O programa irá exibir os "alert", mas no console não irá reconhecer "y" e "z". As variáveis "y" e "z" só existe dentro da função.*/
+
+    k = 40;//Tirando o "let".
+    function fazMuitaCoisa(z){         
+        y = 20; 
+        alert(z);
+        alert(y);
+    }
+    fazMuitaCoisa(30);
+
+    /*O "let" garante que a variável exista apenas dentro de um determinado escopo.*/
+</script>
