@@ -1,0 +1,17 @@
+<script>
+    let a = [[0,1], [10,11], [20,21], [30,31]];//array bidimensional.
+
+    function alertArray(i, a){//Função para percorrer o array.
+        let j = 0;
+        while(j < a.length){
+            alert('Na posição '+i+','+j+' valor: '+a[j]);
+            j++
+        }
+    }
+    
+    let i = 0;
+    while(i < a.length){//"navegando" pelo array.
+        alertArray(i,a[i]);//Chamando a função "alertArray"
+        i++;
+    }
+</script>
