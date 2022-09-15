@@ -17,20 +17,20 @@ let estrutura = [
 */
 
 //Comando "for".
-for(let i=0; i<estrutura.length; i++){
-    console.log(estrutura[i]);//Será exibido os elementos 0 do primeiro array.
+for(let i=0; i<estrutura[0].length; i++){
+    console.log(estrutura[0][i]);//Será exibido os elementos 0, 1 e 2 do primeiro array (elemento zero).
 }
 
 console.log('////////////////////////////////')
 
 //Comando "forEach".
-estrutura.forEach(function(valor){
+estrutura[1].forEach(function(valor){
     console.log(valor);
 })
 
 console.log('////////////////////////////////')
 
 //Comando "for...of".
-for(let elemento of estrutura){
-    console.log(elemento);
+for(let elementoTerceiraLinha of estrutura[2]){
+    console.log(elementoTerceiraLinha);
 }
