@@ -1,6 +1,7 @@
 //.map
 
-/*permite percorrer um vetor e obter um novo array cujos itens são o resultado de uma função de callback que recebe como parâmetro cada item original. Por exemplo, podemos partir de um array de valores numéricos e obter um novo contendo o quadrado de cada item original.
+/*
+Permite percorrer um vetor e obter um novo array cujos itens são o resultado de uma função de callback que recebe como parâmetro cada item original. Por exemplo, podemos partir de um array de valores numéricos e obter um novo contendo o quadrado de cada item original.
 
 map() é invocado a partir de um array e recebe como parâmetro uma função de callback, que é invocada para cada item e retorna o valor do item equivalente no array resultante.
 
