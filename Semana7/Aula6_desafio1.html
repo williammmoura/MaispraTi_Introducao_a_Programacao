@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio da Aula 6</title>
+        <script>
+            function funcaoLer(){
+                let entrada = prompt('Entre com o texto:');
+                document.getElementById("entrada").value=entrada; 
+            }
+
+            function funcaoEscrever(){
+                let entrada = document.getElementById("entrada").value;
+                alert('Você digitou: '+ entrada);
+            }
+        </script>
+    </head>
+    <body>
+        Resultado do desafio da aula 6: <input id="entrada">
+        <br>
+        <br> 
+        <button onclick="funcaoLer()">Ler</button>
+        <br>
+        <br>
+        <button onclick="funcaoEscrever()">Escrever</button>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!--Associar ao evento onClick a uma função JS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+
+    <script>
+            function minhaFuncao(){
+                let i = 1;
+                i++;
+                alert(i)
+                console.log('Entro em minha função')
+            }
+
+    </script>
+</head>
+<body>
+    <!--O onclick pode ser colocado em qualquer tag do HTML.-->
+    <h1 id="h1Principal">Vamos Ver o Formulário</h1>
+
+        <!--"id" especifica a tag-->
+        Nome: <input id="nome" type="text"
+        name="nomeDoCampoTexto" value="">
+        E-mail: <input id="email" type="text" name="nome" value="">
+        <br><br>
+        <button onclick="minhaFuncao()">Enviar formulário</button>
+                    
+</body>
+</html>
