@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio do Cadastro</title>
+
+        <script>
+            
+            //Contador
+            let totalCadastro = 0;
+            //Array onde vai acumular os nomes, e-mails, endereços e WhatsApp cadastrados.
+            let nomes = [];
+            let emails = [];
+            let enderecos = [];
+            let whatsapp1 = [];
+            
+            //Usuarios
+            function funcaoCadastro(){
+                let nome = document.getElementById("entradaNome").value;
+                nomes[totalCadastro] = nome;
+                document.getElementById("usuario").innerHTML += "<p onclick = 'exibir("+ totalCadastro + ")'>" + nome;
+
+                let email = document.getElementById("entradaEmail").value;
+                emails[totalCadastro] = email;
+                
+                let endereco = document.getElementById("entradaEndereco").value;
+                enderecos[totalCadastro] = endereco;
+
+                let whatsapp = document.getElementById("entradaWhats").value;
+                whatsapp1[totalCadastro] = whatsapp;
+                    
+                totalCadastro++;
+            }
+
+            //Cadastros
+            function exibir(indice){
+                document.getElementById("cadastro").innerHTML = "Nome:" + nomes[indice] + "<br> E-mail:" + emails[indice] + "<br> Endereço:" + enderecos[indice] + "<br> WhatsApp:" + whatsapp1[indice]; 
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        Nome: <input id="entradaNome" type="text">
+        <br>
+        <br>
+        E-mail: <input id="entradaEmail" type="email">
+        <br>
+        <br>
+        Endereço: <input id="entradaEndereco" type="text">
+        <br>
+        <br>
+        WhatsApp: <input id="entradaWhats" type="text">
+        <br>
+        <br>
+        <button onclick="funcaoCadastro()">Criar Cadastro</button>
+        <br>
+        <br>
+        Usuários
+        <p id="usuario"></p>
+        <br>
+        Cadastro
+        <p id="cadastro"></p>
+    </body>
+</html>
